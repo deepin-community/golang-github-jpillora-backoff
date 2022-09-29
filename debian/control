@@ -1,0 +1,20 @@
+Source: golang-github-jpillora-backoff
+Section: devel
+Priority: optional
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Uploaders: Dmitry Smirnov <onlyjob@debian.org>
+Build-Depends: debhelper (>= 11~),
+               dh-golang,
+               golang-any
+Standards-Version: 4.1.4
+Homepage: https://github.com/jpillora/backoff
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-jpillora-backoff
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-jpillora-backoff.git
+XS-Go-Import-Path: github.com/jpillora/backoff
+Testsuite: autopkgtest-pkg-go
+
+Package: golang-github-jpillora-backoff-dev
+Architecture: all
+Depends: ${misc:Depends}
+Description: backoff algorithm in Golang
+ Backoff is a simple exponential backoff counter in Go (Golang)
